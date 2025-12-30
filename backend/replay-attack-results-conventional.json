@@ -1,0 +1,40 @@
+{
+  "testDate": "2025-12-30T22:59:45.566Z",
+  "apiUrl": "http://localhost:3001/api",
+  "iterations": 100,
+  "scenariosRun": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "results": {
+    "replayVerifySameTempToken": {
+      "blocked": 100,
+      "passed": 0,
+      "errors": 0
+    },
+    "replayVerifySamePacketDelay": {
+      "blocked": 100,
+      "passed": 0,
+      "errors": 0
+    },
+    "replayTOTPSameWindowNewTempToken": {
+      "blocked": 0,
+      "passed": 100,
+      "errors": 0
+    },
+    "replayTOTPExpired": {
+      "blocked": 100,
+      "passed": 0,
+      "errors": 0
+    }
+  },
+  "summary": {
+    "totalTests": 400,
+    "totalBlocked": 300,
+    "totalPassed": 100,
+    "totalErrors": 0,
+    "successRate": 75
+  }
+}

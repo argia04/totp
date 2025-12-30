@@ -1,0 +1,69 @@
+{
+  "date": "2025-12-30T23:03:29.595Z",
+  "config": {
+    "apiUrl": "http://localhost:3001/api",
+    "iterations": 100,
+    "concurrentUsers": 100
+  },
+  "results": {
+    "responseTimeTable": {
+      "totpGeneration": {
+        "mean": "0.05",
+        "min": "0.03",
+        "max": "0.75",
+        "median": "0.03",
+        "p95": "0.10"
+      },
+      "registration": {
+        "mean": "96.11",
+        "min": "89.67",
+        "max": "264.57",
+        "median": "91.78",
+        "p95": "117.64"
+      },
+      "loginStep1": {
+        "mean": "98.96",
+        "min": "85.34",
+        "max": "500.83",
+        "median": "90.59",
+        "p95": "120.08"
+      },
+      "verifyTotp": {
+        "mean": "2.69",
+        "min": "1.55",
+        "max": "19.67",
+        "median": "2.25",
+        "p95": "5.23"
+      },
+      "completeLogin": {
+        "mean": "137.65",
+        "min": "89.50",
+        "max": "339.97",
+        "median": "127.56",
+        "p95": "202.06"
+      }
+    },
+    "concurrencyTable": {
+      "successRate": "100/100",
+      "responseTime": {
+        "mean": "10083.50",
+        "min": "4058.68",
+        "max": "11704.40",
+        "median": "11330.71",
+        "p95": "11698.44"
+      }
+    },
+    "overheadTable": {
+      "clientSide": {
+        "total": "0.05",
+        "percent": "0.1",
+        "totpGen": "0.05"
+      },
+      "serverSide": {
+        "total": "38.69",
+        "percent": "99.9"
+      },
+      "grandTotal": "38.74"
+    }
+  }
+}
