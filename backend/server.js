@@ -11,7 +11,6 @@ app.use(cors());
 const path = require("path");
 
 app.use(express.json());
-const path = require("path");
 
 // demo storage (RAM)
 const users = {};
@@ -167,8 +166,8 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../frontend/build", "index.html"));
 });
 
-app.listen(process.env.PORT || 3001, () => {
-  console.log(
-    `Backend running on http://localhost:${process.env.PORT || 3001}`
-  );
+const PORT = process.env.PORT || 3001;
+
+app.listen(PORT, () => {
+  console.log(`Backend running on port ${PORT}`);
 });
