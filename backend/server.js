@@ -157,8 +157,6 @@ app.get("/api/me", (req, res) => {
   }
 });
 
-const path = require("path");
-
 // Serve React build (production)
 app.use(express.static(path.join(__dirname, "../frontend/build")));
 
